@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<invoice>
+    <commodity type="dict">
+        <n1 type="dict">
+            <commodity_name type="str">*运输服务*客运服务费</commodity_name>
+            <commodity_type type="str">无</commodity_type>
+            <commodity_unit type="str">次</commodity_unit>
+            <commodity_num type="str">1</commodity_num>
+            <commodity_price type="str">19.49</commodity_price>
+            <commodity_amount type="str">19.49</commodity_amount>
+            <commodity_taxrate type="str">免税</commodity_taxrate>
+            <commodity_tax type="str">***</commodity_tax>
+        </n1>
+    </commodity>
+    <image_path type="str">00001.png</image_path>
+    <invoice_type type="str">上海增值税电子普通发票</invoice_type>
+    <invoice_code type="str">031002000311</invoice_code>
+    <invoice_id type="str">81588827</invoice_id>
+    <date type="str">2020年12月07日</date>
+    <check_code type="str">13615887379022134143</check_code>
+    <machine_id type="str">499099821381</machine_id>
+    <purchaser_name type="str">上海依家贸易有限公司</purchaser_name>
+    <purchaser_id type="str">9131032145642268K</purchaser_id>
+    <purchaser_address type="str"/>
+    <purchaser_bank type="str"/>
+    <totol_amount type="str">19.49</totol_amount>
+    <totol_tax type="str">***</totol_tax>
+    <amount_word type="str">壹拾玖圆肆角玖分</amount_word>
+    <amount_figue type="str">19.49</amount_figue>
+    <seller_name type="str">上海路团科技有限公司</seller_name>
+    <seller_id type="str">91310105MA1FW5NA99</seller_id>
+    <seller_address type="str">上海市长宁区天山西路18号2号楼403室021-53559777</seller_address>
+    <seller_bank type="str">招商银行上海东方支行110926288110808</seller_bank>
+    <remark type="str"/>
+    <payee type="str">陈家恒</payee>
+    <checker type="str">葛曼</checker>
+    <drawer type="str">罗静宜</drawer>
+    <seller type="str"/>
+</invoice>
