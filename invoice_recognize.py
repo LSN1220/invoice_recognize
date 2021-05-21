@@ -14,8 +14,10 @@ from PIL import Image, ImageTk, ImageDraw
 from wand.exceptions import WandException
 
 from gui import FIELDS
+from gui.help_box import HelpBox
 from gui.viewer import PDFViewer
 from gui.custom_widgets import HoverButton, MenuBox, Logger, StoppableThread
+# from ocr.predict import predict
 
 class Extractor(Frame):
 
@@ -326,7 +328,7 @@ class Extractor(Frame):
             image = page.to_image(resolution=100)
             
             # myocr
-            # text_strings, text_recs_alls = predict([image.original], language='jpn')
+            # text_strings, text_recs_alls = predict([image.original], language='chn')
             # boxes = [[(recs[0], recs[1]), (recs[4], recs[5])] for recs in text_recs_alls[0]][:-1]
             # imgdraw = ImageDraw.Draw(image.original)
             # for box in boxes:
@@ -341,7 +343,7 @@ class Extractor(Frame):
             
             pdf = pytesseract.image_to_pdf_or_hocr(image.original, extension='pdf')
             pdf_pages.append(pdf)
-
+   
         pdf_writer = PyPDF2.PdfFileWriter()
         for page in pdf_pages:
             pdf = PyPDF2.PdfFileReader(io.BytesIO(page))
